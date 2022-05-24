@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css
+    "
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Stopwatch</title>
+  </head>
+  <body>
+    <div id="container" class="p-5 mt-sm-5">
+      <h1>STOPWATCH</h1>
+      <p id="screen">00:00:00</p>
+      <div id="btn-container">
+        <button onclick="stoperica.start()" class="btn btn-success m-sm-2">
+          START
+        </button>
+        <button onclick="stoperica.stop()" class="btn btn-danger m-sm-2">
+          STOP
+        </button>
+        <button onclick="stoperica.lap()" class="btn btn-warning m-sm-2">
+          LAP
+        </button>
+        <button onclick="stoperica.restart()" class="btn btn-secondary m-sm-2">
+          RESTART
+        </button>
+      </div>
+      <div id="lap-list"></div>
+    </div>
+    <script src="Stopwatch.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
